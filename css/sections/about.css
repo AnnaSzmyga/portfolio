@@ -1,2 +1,22 @@
+.about {
+  text-align: center;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  border: 6px solid #8662b4;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.about__text {
+  text-align: right;
+}
+
+.about__image {
+  margin-left: 40px;
+  clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 8%);
+}
 
 /*# sourceMappingURL=about.css.map */

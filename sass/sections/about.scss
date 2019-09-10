@@ -1,0 +1,19 @@
+.about {
+    text-align: center;
+    &__content {
+        display: flex;
+        align-items: center;
+        border: 6px solid rgb(134, 98, 180);
+        background-color: #fff;
+        padding: 40px;
+    }
+
+    &__text {
+        text-align: right;
+    }
+
+    &__image {
+        margin-left: 40px;
+        clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 8%);
+    }
+}

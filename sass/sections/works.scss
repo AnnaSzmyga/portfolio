@@ -1,0 +1,99 @@
+.works {
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width:33%;
+        min-height: 300px;
+        padding: 10px;
+        position: relative;
+
+        &:nth-child(1) .gallery__image {
+            background-image: url('../images/wondercake.png');
+        }
+        &:nth-child(2) .gallery__image {
+            background-image: url('../images/awax.png');
+        }
+        &:nth-child(3) .gallery__image {
+            background-image: url('../images/sudoku.png');
+        }
+        &:nth-child(4) .gallery__image {
+            background-image: url('../images/space-quiz.png');
+        }
+        &:nth-child(5) .gallery__image {
+            background-image: url('../images/infinity-group.png');
+        }
+        &:nth-child(6) .gallery__image {
+            background-image: url('../images/rock-scissors-paper.png');
+        }
+        &:nth-child(7) .gallery__image {
+            background-image: url('../images/mache.png');
+        }
+        &:nth-child(8) .gallery__image {
+            background-image: url('../images/administration-panel.png');
+        }
+        &:nth-child(9) .gallery__image {
+            background-image: url('../images/golden.png');
+        }
+
+        &:hover .gallery__details {
+            opacity: 1;
+            bottom: 10px;
+        }
+
+        &:hover .gallery__image::after {
+            opacity: 1;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: top center;
+        filter: grayscale(100%);
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: rgba(250, 250, 250, .5);
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+
+    &__details {
+        clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 8%);
+        width: calc(100% - 20px);
+        min-height: 100px;
+        position: absolute;
+        bottom: -50px;
+        left: 10px;
+        background-color: rgba(134, 98, 180, .8);
+        padding: 30px 10px 10px 10px;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__description {
+        font-size: 12px;
+    }
+}

@@ -41,7 +41,10 @@
   width: 100%;
   height: 100%;
   display: inline-block;
-  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .menu {
@@ -120,6 +123,7 @@
 .hamburger__bar {
   height: 1.5px;
   background-color: #fff;
+  transition: 0.3s;
 }
 
 .hamburger__bar:first-of-type {
