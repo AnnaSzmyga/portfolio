@@ -49,6 +49,11 @@
         &:hover .gallery__image::after {
             opacity: 1;
         }
+
+        &:hover .gallery__icon {
+            opacity: 1;
+            top: 70px;
+        }
     }
 
     &__image {
@@ -95,5 +100,28 @@
 
     &__description {
         font-size: 12px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 20px;
+        color: rgb(134, 98, 180);
+        opacity: 0;
+        &:hover {
+            color: lighten($color: rgb(134, 98, 180), $amount: 10%);
+        }
+
+        &.fa-eye {
+            left: 50%;
+            transform: translate(-60px, -50%);
+            font-size: 42px;
+            transition: .5s;
+        }
+        &.fa-github {
+            right: 50%;
+            transform: translate(60px, -50%);
+            font-size: 36px;
+            transition: .8s;
+        }
     }
 }

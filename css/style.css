@@ -271,6 +271,11 @@
   opacity: 1;
 }
 
+.gallery__item:hover .gallery__icon {
+  opacity: 1;
+  top: 70px;
+}
+
 .gallery__image {
   width: 100%;
   height: 100%;
@@ -316,6 +321,31 @@
 
 .gallery__description {
   font-size: 12px;
+}
+
+.gallery__icon {
+  position: absolute;
+  top: 20px;
+  color: #8662b4;
+  opacity: 0;
+}
+
+.gallery__icon:hover {
+  color: #a185c4;
+}
+
+.gallery__icon.fa-eye {
+  left: 50%;
+  transform: translate(-60px, -50%);
+  font-size: 42px;
+  transition: .5s;
+}
+
+.gallery__icon.fa-github {
+  right: 50%;
+  transform: translate(60px, -50%);
+  font-size: 36px;
+  transition: .8s;
 }
 
 *, *::before, *::after {
