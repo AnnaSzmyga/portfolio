@@ -1,0 +1,26 @@
+.contact {
+    padding-bottom: 80px;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__email {
+        font-weight: 700;
+    }
+
+    &__icons-bar {
+        margin-top: 40px;
+    }
+
+    &__icon {
+        font-size: 26px;
+        color: rgb(157, 136, 184);
+        margin: 0 10px;
+        transition: .3s;
+
+        &:hover {
+            color: black;
+        }
+    }
+}

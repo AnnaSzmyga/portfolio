@@ -199,6 +199,7 @@
 
 .about__text {
   text-align: right;
+  line-height: 1.5;
 }
 
 .about__image {
@@ -346,6 +347,44 @@
   transform: translate(60px, -50%);
   font-size: 36px;
   transition: .8s;
+}
+
+.contact {
+  padding-bottom: 80px;
+}
+
+.contact__content {
+  text-align: center;
+}
+
+.contact__email {
+  font-weight: 700;
+}
+
+.contact__icons-bar {
+  margin-top: 40px;
+}
+
+.contact__icon {
+  font-size: 26px;
+  color: #9d88b8;
+  margin: 0 10px;
+  transition: .3s;
+}
+
+.contact__icon:hover {
+  color: black;
+}
+
+.footer {
+  -webkit-clip-path: polygon(26% 0, 100% 43%, 100% 100%, 0 100%, 0 33%);
+          clip-path: polygon(26% 0, 100% 43%, 100% 100%, 0 100%, 0 33%);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 40px 0;
+}
+
+.footer__text span {
+  color: #8662b4;
 }
 
 *, *::before, *::after {

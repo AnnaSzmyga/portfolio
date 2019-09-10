@@ -5,5 +5,5 @@
 		"../../sass/sections/footer.scss"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,SAAS,EAAE,kDAAkD;EAC7D,gBAAgB,EAAE,kBAAiB;EACnC,OAAO,EAAE,MAAM;CAKlB;;AAHI,AAAD,aAAO,CAAC,IAAI,CAAC;EACT,KAAK,EAAE,OAAiB;CAC3B"
 }
