@@ -8,3 +8,20 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/background-image.jpeg);
+    background-attachment: fixed;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+}
