@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'sections/header';
+@import 'sections/about';
+@import 'sections/works';
+@import 'sections/contact';
+@import 'sections/footer';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
