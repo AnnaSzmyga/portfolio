@@ -1,17 +1,20 @@
 .contact {
   padding-bottom: 80px;
+  position: relative;
+  border-top: 4px solid #8662b4;
 }
 
 .contact__content {
   text-align: center;
 }
 
-.contact__email {
-  font-weight: 700;
+.contact__text .first-letter {
+  text-shadow: 0 0 15px black;
 }
 
-.contact__icons-bar {
-  margin-top: 40px;
+.contact__email {
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .contact__icon {
@@ -19,6 +22,7 @@
   color: #9d88b8;
   margin: 0 10px;
   transition: .3s;
+  text-shadow: 0 0 25px black;
 }
 
 .contact__icon:hover {

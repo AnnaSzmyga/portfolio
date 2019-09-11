@@ -10,6 +10,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
+    @media (max-width: 767px) {
+        align-items: flex-start;
+    }
 }
 
 .logo {
@@ -51,21 +55,58 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 767px) {
+        flex-direction: column;
+        margin-top: 17px;
+        align-items: flex-end;
+    }
+
     &__list {
         display: flex;
         align-items: center;
         list-style-type: none;
         justify-content: center;
-        margin-left: 0;
+        padding-left: 0;
         margin-right: 40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
 
         @media (max-width: 767px) {
             flex-direction: column;
+            order: 2;
+            margin-right: 0;
+        }
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
         }
     }
 
     &__item {
         margin: 0 10px;
+        transform: translateX(40px);
+
+        @media (max-width: 767px) {
+            margin: 15px 0;
+        }
+        &.item1 {
+            transition: .3s;
+        }
+        &.item2 {
+            transition: .6s;
+        }
+        &.item3 {
+            transition: .9s;
+        }
+        &.item4 {
+            transition: 1.2s;
+        }
+    }
+
+    &__list.show .menu__item {
+        transform: translateX(0);
     }
 
     &__link {
@@ -120,6 +161,11 @@
     align-items: flex-end;
     cursor: pointer;
 
+    @media (max-width: 767px) {
+        order: 1;
+        margin-right: 10px;
+    }
+
     &__bar {
         height: 1.5px;
         background-color: #fff;
@@ -150,13 +196,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @media (max-width: 350px) {
+        transform: translate(-50%, -30%);
+    }
+
     &__heading {
         text-transform: uppercase;
         font-family: 'Cormorant Infant', serif;
         color: #fff;
         letter-spacing: 6px;
         font-size: 4em;
-        // font-weight: 400;
+        animation: fadeInDown 1s;
 
         @media (max-width: 767px) {
             font-size: 3em;
@@ -171,6 +222,7 @@
         font-weight: 400;
         color: rgb(134, 98, 180);
         text-shadow: 0 0 15px black;
+        animation: fadeInUp 2s;
 
         & span {
             text-transform: uppercase;
