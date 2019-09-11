@@ -1,17 +1,35 @@
 .works {
     background-color: #fff;
     text-align: center;
+    clip-path: polygon(78% 0, 100% 8%, 100% 100%, 0 100%, 0 5%);
+
+    @media (max-width: 767px) {
+        clip-path: polygon(78% 0, 100% 2%, 100% 100%, 0 100%, 0 2%);
+    }
+
+    &__text {
+        padding: 0 15px;
+    }
 }
 
 .gallery {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 
     &__item {
         width:33%;
         min-height: 300px;
         padding: 10px;
         position: relative;
+
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 50%;
+        }
 
         &:nth-child(1) .gallery__image {
             background-image: url('../images/wondercake.png');

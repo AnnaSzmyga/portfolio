@@ -4,6 +4,12 @@
   padding: 40px 0;
 }
 
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
 .footer__text span {
   color: #8662b4;
 }

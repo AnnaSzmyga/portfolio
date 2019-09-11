@@ -16,7 +16,14 @@ html {
 body {
     background-image: url(../images/background-image.jpeg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 5%;
     font-family: 'Playfair Display', serif;
+
+    @media (max-width: 1199px) {
+        background-position: 60% 0%;
+    }
 }
 
 .container {
@@ -28,6 +35,10 @@ body {
 
 .section {
     padding: 80px 0;
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
 }
 
 .section__title {
@@ -39,10 +50,16 @@ body {
     &--about {
         color:#fff;
         & span {
-            color: rgb(157, 136, 184);
+            color: rgb(134, 98, 180);
         }
     }
     &--works {
         color: rgb(134, 98, 180);
     }
+}
+
+.first-letter {
+    color: rgb(134, 98, 180);
+    font-size: larger;
+    font-weight: 700;
 }

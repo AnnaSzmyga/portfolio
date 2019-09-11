@@ -58,6 +58,10 @@
         justify-content: center;
         margin-left: 0;
         margin-right: 40px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -153,12 +157,20 @@
         letter-spacing: 6px;
         font-size: 4em;
         // font-weight: 400;
+
+        @media (max-width: 767px) {
+            font-size: 3em;
+        }
+        @media (max-width: 350px) {
+            font-size: 2.5em;
+        }
     }
 
     &__subheading {
         font-size: 1.5em;
         font-weight: 400;
         color: rgb(134, 98, 180);
+        text-shadow: 0 0 15px black;
 
         & span {
             text-transform: uppercase;
