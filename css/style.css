@@ -96,6 +96,7 @@
     margin-top: 17px;
     -ms-flex-align: end;
         align-items: flex-end;
+    overflow: hidden;
   }
 }
 
@@ -141,7 +142,7 @@
 }
 
 .menu__item.item1 {
-  transition: .3s;
+  transition: .2s;
 }
 
 .menu__item.item2 {
@@ -149,11 +150,11 @@
 }
 
 .menu__item.item3 {
-  transition: .9s;
+  transition: 1s;
 }
 
 .menu__item.item4 {
-  transition: 1.2s;
+  transition: 1.4s;
 }
 
 .menu__list.show .menu__item {

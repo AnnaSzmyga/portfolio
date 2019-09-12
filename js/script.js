@@ -18,10 +18,8 @@ const checkIfInViewport = (element, callbackIfYes, callbackIfNot) => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     const elementHeight = element.offsetHeight;
     if ( (elementCoordinates.top >= 0) && (elementCoordinates.bottom < (viewportHeight + elementHeight)) ) {
-        console.log('in viewport!');
         callbackIfYes()
     } else {
-        console.log('not...');
         callbackIfNot();
     }
 }

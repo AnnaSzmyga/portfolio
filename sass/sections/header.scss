@@ -59,6 +59,7 @@
         flex-direction: column;
         margin-top: 17px;
         align-items: flex-end;
+        overflow: hidden;
     }
 
     &__list {
@@ -92,16 +93,16 @@
             margin: 15px 0;
         }
         &.item1 {
-            transition: .3s;
+            transition: .2s;
         }
         &.item2 {
             transition: .6s;
         }
         &.item3 {
-            transition: .9s;
+            transition: 1s;
         }
         &.item4 {
-            transition: 1.2s;
+            transition: 1.4s;
         }
     }
 
