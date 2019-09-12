@@ -57,6 +57,12 @@ body {
     &--works {
         color: rgb(134, 98, 180);
     }
+    &--contact {
+        color:#fff;
+    }
+    &.animated {
+        animation: fadeInDown 1s;
+    }
 }
 
 .first-letter {

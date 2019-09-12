@@ -629,6 +629,14 @@ body {
   color: #8662b4;
 }
 
+.section__title--contact {
+  color: #fff;
+}
+
+.section__title.animated {
+  animation: fadeInDown 1s;
+}
+
 .first-letter {
   color: #8662b4;
   font-size: larger;
