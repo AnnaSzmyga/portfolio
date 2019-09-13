@@ -1,4 +1,4 @@
-// MOBILE MENU:
+// mobile menu:
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu__list');
@@ -10,7 +10,9 @@ const toggleMenu = () => {
 hamburger.addEventListener('click', toggleMenu);
 
 
-// start animation when element is in viewport
+
+// start animation when element is in viewport:
+
 const animatedElements = document.querySelectorAll('.section__title');
 
 const checkIfInViewport = (element, callbackIfYes, callbackIfNot) => {
