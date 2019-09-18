@@ -139,10 +139,10 @@
     &__icon {
         position: absolute;
         top: 20px;
-        color: rgb(134, 98, 180);
+        color: $purple-primary;
         opacity: 0;
         &:hover {
-            color: lighten($color: rgb(134, 98, 180), $amount: 10%);
+            color: lighten($color: $purple-primary, $amount: 10%);
         }
 
         &.fa-eye {
