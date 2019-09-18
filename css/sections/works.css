@@ -43,7 +43,7 @@
 .gallery__item::after {
   content: "";
   display: block;
-  background-color: #8662b4;
+  background-color: rgba(134, 98, 180, 0.8);
   width: calc(100% - 20px);
   height: 8%;
   position: absolute;

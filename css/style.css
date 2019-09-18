@@ -308,7 +308,6 @@
       align-items: center;
   background-color: #fff;
   padding: 40px;
-  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -317,19 +316,6 @@
         flex-direction: column;
     padding: 15px;
   }
-}
-
-.about__content::after {
-  content: "";
-  display: block;
-  background-color: #8662b4;
-  width: 100%;
-  height: 5%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  -webkit-clip-path: polygon(0 0, 100% 0, 18% 100%, 0 48%);
-          clip-path: polygon(0 0, 100% 0, 18% 100%, 0 48%);
 }
 
 .about__text {
@@ -350,6 +336,23 @@
           clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 8%);
   width: 300px;
   height: 300px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("https://via.placeholder.com/300");
+  position: relative;
+}
+
+.about__image::after {
+  content: "";
+  display: block;
+  background-color: rgba(134, 98, 180, 0.8);
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
 @media (max-width: 767px) {
@@ -417,7 +420,7 @@
 .gallery__item::after {
   content: "";
   display: block;
-  background-color: #8662b4;
+  background-color: rgba(134, 98, 180, 0.8);
   width: calc(100% - 20px);
   height: 8%;
   position: absolute;

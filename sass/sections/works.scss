@@ -34,7 +34,7 @@
         &::after {
             content: "";
             display: block;
-            background-color: rgb(134, 98, 180);
+            background-color: rgba(134, 98, 180, .8);
             width: calc(100% - 20px);
             height: 8%;
             position: absolute;
