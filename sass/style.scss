@@ -18,12 +18,16 @@ body {
     background-image: url(../images/background-image.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: 0% 5%;
     font-family: 'Playfair Display', serif;
 
     @media (max-width: 1199px) {
         background-position: 60% 0%;
+    }
+
+    @media (orientation: portrait) {
+        background-size: auto 100%;
     }
 }
 
