@@ -615,7 +615,7 @@ body {
   background-image: url("../images/background-image.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: 0% 5%;
   font-family: 'Playfair Display', serif;
 }
@@ -623,12 +623,6 @@ body {
 @media (max-width: 1199px) {
   body {
     background-position: 60% 0%;
-  }
-}
-
-@media (orientation: portrait) {
-  body {
-    background-size: auto 100%;
   }
 }
 
