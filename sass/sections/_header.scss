@@ -140,7 +140,7 @@
             transition: .7s;
         }
         &:hover {
-            color: $purple-light;
+            color: black;
 
             &::before {
                 bottom: 0;
@@ -187,7 +187,7 @@
     }
 
     &:hover .hamburger__bar {
-        background-color: $purple-light;
+        background-color: black;
     }
 }
 
@@ -221,7 +221,7 @@
     &__subheading {
         font-size: 1.5em;
         font-weight: 400;
-        color: rgb(134, 98, 180);
+        color: $purple-light;
         text-shadow: 0 0 15px black;
         animation: fadeInUp 2s;
 
