@@ -425,7 +425,7 @@
 }
 
 .gallery__item:nth-child(2) .gallery__image {
-  background-image: url("../images/awax.png");
+  background-image: url("../images/talking-with-aco.png");
 }
 
 .gallery__item:nth-child(3) .gallery__image {
@@ -441,19 +441,19 @@
 }
 
 .gallery__item:nth-child(6) .gallery__image {
-  background-image: url("../images/rock-scissors-paper.png");
+  background-image: url("../images/awax.png");
 }
 
 .gallery__item:nth-child(7) .gallery__image {
-  background-image: url("../images/mache.png");
+  background-image: url("../images/rock-scissors-paper.png");
 }
 
 .gallery__item:nth-child(8) .gallery__image {
-  background-image: url("../images/administration-panel.png");
+  background-image: url("../images/mache.png");
 }
 
 .gallery__item:nth-child(9) .gallery__image {
-  background-image: url("../images/golden.png");
+  background-image: url("../images/administration-panel.png");
 }
 
 .gallery__item:hover .gallery__details {
