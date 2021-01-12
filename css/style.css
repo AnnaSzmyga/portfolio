@@ -228,7 +228,7 @@
 }
 
 .hamburger__bar {
-  height: 1.5px;
+  height: 1px;
   background-color: #fff;
   transition: 0.3s;
 }
