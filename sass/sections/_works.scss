@@ -44,30 +44,33 @@
         }
 
         &:nth-child(1) .gallery__image {
-            background-image: url('../images/wondercake.png');
+            background-image: url('../images/saper.png');
         }
         &:nth-child(2) .gallery__image {
-            background-image: url('../images/talking-with-aco.png');
+            background-image: url('../images/wondercake.png');
         }
         &:nth-child(3) .gallery__image {
-            background-image: url('../images/sudoku.png');
+            background-image: url('../images/talking-with-aco.png');
         }
         &:nth-child(4) .gallery__image {
-            background-image: url('../images/space-quiz.png');
+            background-image: url('../images/sudoku.png');
         }
         &:nth-child(5) .gallery__image {
-            background-image: url('../images/infinity-group.png');
+            background-image: url('../images/space-quiz.png');
         }
         &:nth-child(6) .gallery__image {
-            background-image: url('../images/awax.png');
+            background-image: url('../images/infinity-group.png');
         }
         &:nth-child(7) .gallery__image {
-            background-image: url('../images/rock-scissors-paper.png');
+            background-image: url('../images/awax.png');
         }
         &:nth-child(8) .gallery__image {
-            background-image: url('../images/mache.png');
+            background-image: url('../images/rock-scissors-paper.png');
         }
         &:nth-child(9) .gallery__image {
+            background-image: url('../images/mache.png');
+        }
+        &:nth-child(10) .gallery__image {
             background-image: url('../images/administration-panel.png');
         }
 
@@ -164,7 +167,7 @@
             font-size: 42px;
             transition: .5s;
         }
-        &.fa-github {
+        &.fa-github, &.fa-codepen {
             right: 50%;
             transform: translate(60px, -50%);
             font-size: 36px;

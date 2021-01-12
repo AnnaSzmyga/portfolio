@@ -421,38 +421,42 @@
 }
 
 .gallery__item:nth-child(1) .gallery__image {
-  background-image: url("../images/wondercake.png");
+  background-image: url("../images/saper.png");
 }
 
 .gallery__item:nth-child(2) .gallery__image {
-  background-image: url("../images/talking-with-aco.png");
+  background-image: url("../images/wondercake.png");
 }
 
 .gallery__item:nth-child(3) .gallery__image {
-  background-image: url("../images/sudoku.png");
+  background-image: url("../images/talking-with-aco.png");
 }
 
 .gallery__item:nth-child(4) .gallery__image {
-  background-image: url("../images/space-quiz.png");
+  background-image: url("../images/sudoku.png");
 }
 
 .gallery__item:nth-child(5) .gallery__image {
-  background-image: url("../images/infinity-group.png");
+  background-image: url("../images/space-quiz.png");
 }
 
 .gallery__item:nth-child(6) .gallery__image {
-  background-image: url("../images/awax.png");
+  background-image: url("../images/infinity-group.png");
 }
 
 .gallery__item:nth-child(7) .gallery__image {
-  background-image: url("../images/rock-scissors-paper.png");
+  background-image: url("../images/awax.png");
 }
 
 .gallery__item:nth-child(8) .gallery__image {
-  background-image: url("../images/mache.png");
+  background-image: url("../images/rock-scissors-paper.png");
 }
 
 .gallery__item:nth-child(9) .gallery__image {
+  background-image: url("../images/mache.png");
+}
+
+.gallery__item:nth-child(10) .gallery__image {
   background-image: url("../images/administration-panel.png");
 }
 
@@ -554,7 +558,7 @@
   transition: .5s;
 }
 
-.gallery__icon.fa-github {
+.gallery__icon.fa-github, .gallery__icon.fa-codepen {
   right: 50%;
   transform: translate(60px, -50%);
   font-size: 36px;
